@@ -1,2 +1,2 @@
 # Top-Bouilloire
-Website layout top bailure. Technologies used: HTML + CSS
+Website layout Top Bailure. Technologies used: HTML + CSS
