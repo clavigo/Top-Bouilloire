@@ -1,3 +1,4 @@
+/* Fonts */
 .poppins-thin {
     font-family: "Poppins", system-ui;
     font-weight: 100;
@@ -106,9 +107,16 @@
     font-style: italic;
 }
 
+body{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Header */
+
 header {
-    padding: 0 13% 0 13%;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .logo-text{
@@ -171,10 +179,65 @@ ul {
     height: 27px;
 }
 
+/* Main */
+
+.top-announcement{
+    /* width: 100%; */
+    height: 769px;
+    background: url("/Top-Bouilloire/src/images/Group19108.png"), linear-gradient(80.95deg, #1E2021 1.05%, #03ADE8 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-wrap: nowrap;
+}
+
+.top-announcement-text p{
+    color: white;
+    font-size: 30px;
+    /* line-height: 25px; */
+}
+
+.top-announcement-text h1 {
+    color: white;
+    font-size: 70px;
+    line-height: 105px;
+}
+
+.top-announcement-text button {
+    width: 208px;
+    height: 60px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgba(0, 167, 224, 1);
+    color: white;
+    font-size: 21px;
+    line-height: 31.5px;
+}
+
+.top-announcement-image{
+    z-index: 1;
+}
+
+.image-background{
+    position: absolute;
+    width: 722px;
+    height: 722px;
+    margin-left: 37%;
+    margin-top: 30px;
+    z-index: 0;
+    background: radial-gradient(circle, rgba(182, 236, 255, 1) 0%, rgba(255, 0, 0, 0) 71%);
+
+    
+}
+
 /* independent */
 .margin-x-auto {
     margin: auto 0;
 }
+
 .margin-auto {
     margin: auto;
+}
+
+.padding-x-13{
+    padding: 0 12% 0 12%;
 }
