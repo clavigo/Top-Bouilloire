@@ -112,7 +112,9 @@ body{
     margin-right: 0;
 }
 
-/* Header */
+/* 
+Header 
+*/
 
 header {
     justify-content: space-between;
@@ -179,8 +181,11 @@ ul {
     height: 27px;
 }
 
-/* Main */
+/* 
+Main 
+*/
 
+/* Top announcement section */
 .top-announcement{
     /* width: 100%; */
     height: 769px;
@@ -210,12 +215,7 @@ ul {
 .top-announcement-text button {
     width: 208px;
     height: 60px;
-    border-radius: 5px;
-    border: 0px;
-    background-color: rgba(0, 167, 224, 1);
-    color: white;
     font-size: 21px;
-    line-height: 31.5px;
 }
 
 .separator {
@@ -236,6 +236,7 @@ ul {
     background: radial-gradient(circle, rgba(182, 236, 255, 1) 0%, rgba(255, 0, 0, 0) 71%); 
 }
 
+/* Recomendation buttons section */
 .recomendation-buttons-section {
     height: 109px;
     background-color: rgba(0, 74, 99, 1);
@@ -265,39 +266,97 @@ ul {
     color: white;
 }
 
-.recomendation-buttons-scroll {
-    margin: auto;
-}
-
 .recomendation-buttons-scroll div {
     display: flex;
 }
 
-.scroll-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    border: none;
-    margin: 10px;
-}
-
-.scroll-btn-forward svg  {
-    margin-left: -2px;
-}
-
-.scroll-btn-backward svg{
-    margin-left: 2px;
-}
-
-.rec-but-scroll-1 {
+.rec-btn-scroll-1 {
     background: rgba(0, 167, 224, 1);
+    border: none;
 }
 
-.rec-but-scroll-2{
+.rec-btn-scroll-2{
     background-color: rgba(0, 167, 224, 0.32);
+    border: none;
+}
+
+/* Offers section */
+
+.offers-section {
+    font-size: 35px;
+    color: rgba(69, 69, 69, 1);
+}
+
+.offer-blocks-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.offer-blocks {
+    overflow-y: scroll;
+}
+
+.offer-blocks::-webkit-scrollbar {
+    display: none;
+}
+
+.offer-blocks {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.offer-block {
+    width: 400px;
+    height: 298px;
+    background-color: rgba(244, 244, 244, 1);
+    border: 1px solid rgba(180, 180, 180, 1);
+    border-radius: 5px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.offer-sticker {
+    width: 183px;
+    height: 37px;
+    border-top: 2px solid rgba(0, 167, 224, 1);
+    border-right: 2px solid rgba(0, 167, 224, 1);
+    border-bottom: 2px solid rgba(0, 167, 224, 1);
+    border-radius: 5px;
+    font-size: 16px;
+    color: rgba(0, 167, 224, 1);
+    text-align: center;
+}
+
+.offer-header {
+    margin: 10px 0; 
+    font-size: 21px;
+}
+
+.offer-description {
+    font-size: 16px;
+    color: rgba(123, 123, 123, 1);
+}
+
+.offer-block button {
+    width: 183px;
+    height: 37;
+    font-size: 16px;
+}
+
+.offer-btn-scroll {
+    background-color: white;
+    border: 2px solid rgba(109, 109, 109, 1)
+}
+
+.offer-scrollbar div {
+    width: 15px;
+    height: 15px;
+    border: 2px solid rgba(109, 109, 109, 1);
+    border-radius: 50%;
+    margin: 0 5px;
 }
 
 /* independent */
@@ -311,4 +370,53 @@ ul {
 
 .padding-x-13{
     padding: 0 12% 0 12%;
+}
+
+.margin-top-100 {
+    margin-top: 100px;
+}
+
+.margin-top-50 {
+    margin-top: 50px;
+}
+
+.flex-align {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.blue-button {
+    border-radius: 5px;
+    border: 0px;
+    background-color: rgba(0, 167, 224, 1);
+    color: white;
+    line-height: 31.5px;
+}
+
+.scroll-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.scroll-btn-forward svg  {
+    margin-left: -2px;
+}
+
+.scroll-btn-backward svg{
+    margin-left: 2px;
+}
+
+.active-scroller {
+    background-color: rgba(109, 109, 109, 1);
 }
